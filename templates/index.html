@@ -1,0 +1,21 @@
+$def with (data, control, formulario)
+<h1>Arduino Control y Lectura</h1>
+
+<h3>Control de un LED</h3>
+
+<form method="POST">
+    $:formulario.render()
+</form>
+
+<div id="control">    
+    $if control == 1:
+        Encendido
+    $else:
+        Apagado
+</div>
+
+<h3>Lectura de un Sensor</h3>
+
+<div id="data">
+     Valor del Sensor: <b>$data</b>
+</div>
