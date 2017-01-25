@@ -11,7 +11,7 @@ app = web.application(urls, globals())
 render = web.template.render('templates', base='base')
 
 class Index:
-    conn = pymysql.connect(host="localhost", port=3306, user="root", passwd="", db="arduino")
+    conn = pymysql.connect(host="wp433upk59nnhpoh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", port=3306, user="nwc6tssdqmori2cr", passwd="t6ifbjox2d6t2d5y", db="arduino")
     cur = conn.cursor()
 
     control = form.Form(
